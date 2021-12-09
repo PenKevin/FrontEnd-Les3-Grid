@@ -1,1 +1,67 @@
-/*Maak hier jouw CSS!*/
+.container{
+    display: grid;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
+    grid-template-areas:
+        "header-a"
+        "main-b"
+        "side-c"
+        "side-d"
+        "side-e"
+        "."
+        "footer-f";
+    background-color: #DEC5E3;
+}
+
+.main-style{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#header-a{
+    grid-area: header-a;
+    background-color: #CDEDFD;
+}
+
+#main-b{
+    grid-area: main-b;
+    background-color: #B6DCFE;
+}
+
+#footer-f{
+    grid-area: footer-f;
+    background-color: #A9F8FB;
+}
+
+#side-c{
+    grid-area: side-c;
+    background-color: #81F7E5;
+}
+
+#side-d{
+    grid-area: side-d;
+    background-color: #81F7E5;
+}
+
+#side-e{
+    grid-area: side-e;
+    background-color: #81F7E5;
+}
+
+@media screen and (min-width: 562px) {
+    .container{
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 50px 190px 100px auto 50px;
+        grid-template-areas:
+        "header-a side-c side-c"
+        "main-b side-c side-c"
+        "main-b side-e side-d"
+        "main-b side-e ."
+        "footer-f footer-f footer-f";
+    }
+}
