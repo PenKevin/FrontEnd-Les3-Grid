@@ -1,5 +1,6 @@
 .container{
     display: grid;
+    padding: 16px;
     grid-gap: 16px;
     grid-template-columns: 1fr;
     grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
@@ -30,6 +31,7 @@
 #main-b{
     grid-area: main-b;
     background-color: #B6DCFE;
+    padding: 16px;
 }
 
 #footer-f{
